@@ -1,0 +1,67 @@
+import becker.robots.*; //import the becker library
+/**
+ * RobotTask
+ * Defines the instructions for the robot task.
+ * @author you
+ * @version February 2020 
+ */
+
+public class RobotTask {
+
+	/**
+	 * Has the robot pick up thing in path.
+	 * @param none
+	 * @return void
+	 */
+	public void run(){
+
+		//build a random city called waterloo
+		City waterloo = new City();
+	
+		//add things in city to pick up 
+		Thing b = new Thing(waterloo, 4,3);
+		b = new Thing(waterloo, 4,5);
+		b = new Thing(waterloo, 4,8);
+		b = new Thing(waterloo, 6,8);
+		b = new Thing(waterloo, 6,12);
+		
+		//build a robot in the city square starting at street 4, avenue 1
+		RobotPlus mo = new RobotPlus (waterloo,4,1,Direction.EAST,0);
+		
+		RobotAdv rA = new RobotAdv(waterloo, 5,2,Direction.WEST,5);
+		
+		System.out.println("Starts at");
+		System.out.println("Avenue "+mo.getAvenue());
+		System.out.println("Street "+mo.getStreet());
+
+		rA.move(2);
+		
+		//retrieve things (also known as beepers)
+		mo.move2();
+		mo.pickThing();
+		mo.move2();
+		mo.pickThing();
+		mo.move3();
+		mo.pickThing();
+		mo.Rm();
+		mo.move();
+		mo.pickThing();
+		mo.Lm();
+		mo.move3();
+		mo.pickThing();
+		mo.turnBack();
+        mo.move3();
+		mo.moveDR();
+        mo.move();
+		mo.moveDL();
+        mo.move7();
+		mo.turnBack();
+
+
+		System.out.println("finished at");
+		System.out.println("Avenue "+mo.getAvenue());
+		System.out.println("Street "+mo.getStreet());
+	}
+
+
+}
