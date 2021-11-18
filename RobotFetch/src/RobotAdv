@@ -1,0 +1,19 @@
+import becker.robots.City;
+import becker.robots.Direction;
+
+public class RobotAdv {
+
+	public RobotAdv() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public RobotAdv(City waterloo, int i, int j, Direction west, int k) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void move(int i) {
+		// TODO Auto-generated method stub
+		this.move(i);
+	}
+
+}
