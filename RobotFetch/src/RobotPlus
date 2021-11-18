@@ -1,0 +1,129 @@
+import becker.robots.City;
+import becker.robots.Direction;
+import becker.robots.Robot;
+
+public class RobotPlus extends Robot {
+	
+	/**
+	 * Constructor method - construct the basic Robot
+	 * @param arg0 - city
+	 * @param arg1 - initial street
+	 * @param arg2 - initial avenue
+	 * @param arg3 - initial direction
+	 * @param arg4 - initial things robots has
+	 */
+
+	public RobotPlus(City arg0, int arg1, int arg2, Direction arg3, int arg4) {
+		super(arg0, arg1, arg2, arg3, arg4);
+		// TODO Auto-generated constructor stub
+	}
+	
+	/**
+	 * moves robot twice
+	 */
+	public void move2() {
+		this.move();
+		this.move();
+	}
+	
+	public void move3() {
+		// TODO Auto-generated method stub
+		this.move();
+		this.move();
+		this.move();
+
+	}
+
+	public void move4() {
+		// TODO Auto-generated method stub
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+
+	}
+
+	public void move5() {
+		// TODO Auto-generated method stub
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+
+	}
+
+	public void move6() {
+		// TODO Auto-generated method stub
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+
+	}
+
+	public void move7() {
+		// TODO Auto-generated method stub
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+		this.move();
+
+	}
+
+	public void tRight() {
+		// TODO Auto-generated method stub
+		/**
+		 * turn robot right
+		 */
+		turnLeft();
+		turnLeft();
+		turnLeft();		
+	}
+
+	public void turnBack() {
+		// TODO Auto-generated method stub
+		turnLeft();
+		turnLeft();
+
+	}
+
+	public void moveDR() {
+		// TODO Auto-generated method stub
+		this.move();
+		turnLeft();
+		turnLeft();
+		turnLeft();	
+
+	}
+
+	public void moveDL() {
+		// TODO Auto-generated method stub
+		this.move();
+		turnLeft();
+
+	}
+
+	public void Rm() {
+		// TODO Auto-generated method stub
+		turnLeft();
+		turnLeft();
+		turnLeft();	
+		this.move();
+
+	}
+
+	public void Lm() {
+		// TODO Auto-generated method stub
+		turnLeft();
+		this.move();
+		
+		}
+	
+	
+}
