@@ -1,0 +1,23 @@
+/**
+ * RobotMain
+ * Creates the robot task and runs it.
+ * @author you
+ * @version April 2021
+ */
+
+public class RobotMain {
+
+	/*
+	 * Starts the robot task.
+	 * 
+	 */
+	public static void main(String[] args) {
+		// where our program starts
+		
+		RobotTask task = new RobotTask();//create a new RobotTask 
+		
+		task.run(); //run the robot's task as defined by the class note
+
+	}
+
+}
